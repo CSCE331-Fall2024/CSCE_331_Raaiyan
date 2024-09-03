@@ -106,9 +106,14 @@ nav#navbar ul li a:hover {
 
 /* BODY STYLES */
 
+main {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 .welcomeSection h1 {
     font-size: 2.5em;
-    margin-top: 30px;
 
     text-align: center;
 }
@@ -118,8 +123,6 @@ nav#navbar ul li a:hover {
 
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
 
     text-align: center;
     line-height: 1.5;
