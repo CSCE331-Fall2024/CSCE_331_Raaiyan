@@ -1,8 +1,39 @@
 @import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
 
+:root {
+    --font-family: "JetBrains Mono", monospace;
+    --line-height: 1.20rem;
+    --border-thickness: 2px;
+    --text-color: #fff;
+    --text-color-alt: #666;
+    --background-color: #000;
+    --background-color-alt: #eee;
+  
+    --font-weight-normal: 500;
+    --font-weight-medium: 600;
+    --font-weight-bold: 800;
+  
+    font-family: var(--font-family);
+    font-optical-sizing: auto;
+    font-weight: var(--font-weight-normal);
+    font-style: normal;
+    font-variant-numeric: tabular-nums lining-nums;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-color);
+    color: var(--text-color);
+}
 
 /* HEADER STYLES */
-body, h1, p, a, ul, li {
+header h1, p, a, ul, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -42,12 +73,12 @@ header table.header td.main-header {
 }
   
 .title {
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 5px;
 }
   
 .subtitle {
-    font-size: 16px;
+    font-size: 20px;
 }
   
 nav#navbar ul {
@@ -110,6 +141,44 @@ nav#navbar ul li a:hover {
     height: 100px;
 
     padding: 10px;
+}
+
+/* TREE STYLES */
+.tree, .tree ul {
+    position: relative;
+    padding-left: 0;
+    list-style-type: none;
+    line-height: var(--line-height);
+}
+.tree ul {
+    margin: 0;
+}
+.tree ul li {
+    position: relative;
+    padding-left: 1.5ch;
+    margin-left: 1.5ch;
+    border-left: var(--border-thickness) solid var(--text-color);
+}
+.tree ul li:before {
+    position: absolute;
+    display: block;
+    top: calc(var(--line-height) / 2);
+    left: 0;
+    content: "";
+    width: 1ch;
+    border-bottom: var(--border-thickness) solid var(--text-color);
+}
+.tree ul li:last-child {
+    border-left: none;
+}
+.tree ul li:last-child:after {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    content: "";
+    height: calc(var(--line-height) / 2);
+    border-left: var(--border-thickness) solid var(--text-color);
 }
 
 
