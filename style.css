@@ -1,10 +1,73 @@
 @import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
 
-body {
-    font-family: 'JetBrains Mono', monospace;
-    background-color: #000;
-    color: #fff;
+body, h1, p, a, ul, li {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+
+    font-family: 'JetBrains Mono', monospace;
+}
+
+header {
+    width: 100%;
+    display: block;
+    background-color: black;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header table.header {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid white;
+}
+  
+header table.header th,
+header table.header td {
+    border: 2px solid white;
+    padding: 10px;
+}
+header table.header td.main-header {
+    padding: 15px;
+    padding-top: 10px;
+}
+  
+.title {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+  
+.subtitle {
+    font-size: 16px;
+}
+  
+nav#navbar ul {
+    list-style: none;
+    text-align: center;
+}
+  
+nav#navbar ul li {
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    text-align: center;
+}
+  
+nav#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+  
+nav#navbar ul li a:hover {
+    text-decoration: underline;
 }
 
