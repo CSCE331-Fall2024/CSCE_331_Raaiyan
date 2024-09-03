@@ -98,5 +98,19 @@ nav#navbar ul li a:hover {
     hyphens: auto;
 }
 
+.linksSection {
+    text-align: center;
+
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.linkImage {
+    width: 100px;
+    height: 100px;
+
+    padding: 10px;
+}
+
 
 
