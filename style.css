@@ -125,12 +125,15 @@ main {
     display: flex;
     flex-direction: horizontal;
 
-    width: 100%;
+    width: 80%;
     height: 100%;
+
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .resume-container, .tree {
-    flex: 1; /* Each takes half of the available space */
+    flex: 1;
     display: flex;
     justify-content: center; /* Center content horizontally */
 }
@@ -140,8 +143,8 @@ main {
 }
 
 .resume-frame {
-    width: 100%; /* Ensures the iframe uses all available space */
-    height: 100%; /* Matches the height to the container */
+    width: 100%;
+    height: 100%;
     border: none;
 }
 
@@ -181,7 +184,7 @@ main {
 
 /* TREE STYLES */
 .tree, .tree ul {
-    width: 50%;
+
 
     position: relative;
     padding-left: 0;
