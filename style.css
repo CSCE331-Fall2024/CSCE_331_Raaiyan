@@ -24,6 +24,7 @@
 body {
     display: flex;
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     flex-direction: column;
@@ -53,7 +54,7 @@ header {
 }
 
 header table.header {
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 
@@ -110,6 +111,37 @@ main {
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
+
+    height: 90%;
+
+    justify-content: space-around;
+}
+
+.quals-container {
+    display: flex;
+    flex-direction: horizontal;
+
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.resume-container, .tree {
+    flex: 1; /* Each takes half of the available space */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.resume-container {
+    overflow: hidden; /* Prevents iframe from overflowing */
+    height: 80%;
+}
+
+.resume-frame {
+    width: 100%; /* Ensures the iframe uses all available space */
+    height: 100%; /* Matches the height to the container */
 }
 
 .welcomeSection h1 {
@@ -148,6 +180,8 @@ main {
 
 /* TREE STYLES */
 .tree, .tree ul {
+    width: 50%;
+
     position: relative;
     padding-left: 0;
     list-style-type: none;
