@@ -109,6 +109,22 @@ nav#navbar ul li a:hover {
     text-decoration: underline;
 }
 
+#themeToggle {
+    font-family: var(--font-family);
+    padding: 5px 10px;
+    margin: none;
+    font-size: 16px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+}
+
+#themeToggle:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
 /* BODY STYLES */
 
 main {
@@ -180,6 +196,40 @@ main {
     height: 100px;
 
     padding: 10px;
+}
+
+.services {
+    text-align: center;
+}
+
+.serviceRow {
+    display: flex;
+    flex-direction: horizontal;
+
+    margin-left: 60px;
+    margin-right: 60px;
+
+    margin-bottom: 50px;
+}
+
+.serviceText {
+    width: 75%;
+
+    margin-right: 50px;
+}
+
+.serviceImage {
+    max-height: 300px;
+    max-width: 300px;
+
+    overflow: hidden;
+}
+
+.serviceImage img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
 }
 
 /* TREE STYLES */

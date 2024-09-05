@@ -1,7 +1,7 @@
 function themeButton() {
     if(localStorage.getItem("theme") === "1") {
         document.getElementById('page_style').setAttribute("href", "style2.css");
-        localStorage.setIten("theme", "2");
+        localStorage.setItem("theme", "2");
     }
     else {
         document.getElementById('page_style').setAttribute("href", "style.css");
