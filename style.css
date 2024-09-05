@@ -272,5 +272,223 @@ main {
     border-left: var(--border-thickness) solid var(--text-color);
 }
 
+/* AI PAGE STYLES */
+.AIBody {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .AIHeader, .AIHeader h1 {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .AITitle {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .AINav ul {
+    background-color: #2c3e50;
+
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .AINav li {
+    background-color: #2c3e50;
+
+    margin: 0 1rem;
+  }
+  
+  .AINav a {
+    background-color: #2c3e50;
+
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .AINav a:hover {
+    color: #3498db;
+  }
+  
+  .AIMain {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+  
+  .AISection {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .AISection p {
+    background-color: #ecf0f1;
+    color: #333;
+  }
+  
+  .AIPromptContainer {
+    background-color: #f1f8ff;
+    border-left: 4px solid #3498db;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .AIPromptContainer p {
+    background-color: #ecf0f1;
+    color: #333;
+  }
+  
+  .AIPrompt {
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 0.9rem;
+    overflow-x: auto;
+  }
+  
+  .AICardContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .AICard {
+    flex-basis: calc(33.333% - 1rem);
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .AICard h3, .AICard p {
+    background-color: #ecf0f1;
+    color: #333;
+  }
+  
+  .AICard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .AIToolGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+  }
+  
+  .AITool {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .AITool:hover {
+    background-color: #2980b9;
+  }
+  
+  .AITimeline {
+    position: relative;
+    padding: 2rem 0;
+  }
+  
+  .AITimeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #3498db;
+  }
+  
+  .AITimelineItem {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .AITimelineItem::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(50% - 8px);
+    width: 16px;
+    height: 16px;
+    background-color: #3498db;
+    border-radius: 50%;
+  }
+  
+  .AITimelineItem h3 {
+    margin-top: 0;
+  }
+
+  .AITimelineItem p {
+    background-color: #ecf0f1;
+    color: #333;
+  }
+  
+  .AIButtonContainer {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .AIButton {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .AIButton:hover {
+    background-color: #27ae60;
+  }
+  
+  @media (max-width: 768px) {
+    .AICardContainer {
+      flex-direction: column;
+    }
+    
+    .AICard {
+      flex-basis: 100%;
+    }
+    
+    .AITimeline::before {
+      left: 0;
+    }
+    
+    .AITimelineItem::before {
+      left: -8px;
+    }
+  }
+
+
 
 
