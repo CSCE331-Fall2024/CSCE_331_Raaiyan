@@ -1,4 +1,4 @@
-function button1() {
+function themeButton() {
     if(localStorage.getItem("theme") === "1") {
         document.getElementById('page_style').setAttribute("href", "style2.css");
         localStorage.setIten("theme", "2");
