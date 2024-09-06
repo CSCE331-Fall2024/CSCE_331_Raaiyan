@@ -76,13 +76,8 @@
   /* Main content styles */
   main {
     max-width: 1200px;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-
-    height: 90%;
-
-    justify-content: space-around;
+    margin: 2rem auto;
+    padding: 0 1rem;
   }
   
   .section {
