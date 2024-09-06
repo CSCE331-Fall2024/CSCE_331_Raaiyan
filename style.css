@@ -198,6 +198,10 @@ main {
     padding: 10px;
 }
 
+.largeLink {
+  color: #000;
+}
+
 .services {
     text-align: center;
 }
